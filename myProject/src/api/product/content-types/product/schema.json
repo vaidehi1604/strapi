@@ -4,17 +4,69 @@
   "info": {
     "singularName": "product",
     "pluralName": "products",
-    "displayName": "product"
+    "displayName": "product",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "title": {
       "type": "string",
       "required": true,
       "maxLength": 80
+    },
+    "slug": {
+      "type": "uid",
+      "maxLength": 110,
+      "minLength": 3
+    },
+    "description": {
+      "type": "text"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Electronic",
+        "Cosmatics",
+        "Beauty",
+        "Fregrance"
+      ],
+      "required": true
+    },
+    "size": {
+      "type": "string",
+      "required": false,
+      "maxLength": 70
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "pink",
+        "white",
+        "green",
+        "blue",
+        "red",
+        "black"
+      ],
+      "required": true
+    },
+    "price": {
+      "required": true,
+      "type": "integer"
+    },
+    "quantity": {
+      "type": "integer",
+      "required": true
     }
   }
 }
