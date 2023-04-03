@@ -27,7 +27,7 @@
     },
     "product": {
       "type": "json",
-      "required": true
+      "required": false
     },
     "address": {
       "type": "text",
