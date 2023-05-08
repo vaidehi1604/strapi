@@ -16,6 +16,7 @@
     "@strapi/strapi": "4.8.2",
     "better-sqlite3": "8.0.1",
     "dotenv": "^16.0.3",
+    "@strapi/provider-email-nodemailer": "^4.9.0",
     "paytmchecksum": "^1.5.0",
     "pg": "^8.10.0"
   },
